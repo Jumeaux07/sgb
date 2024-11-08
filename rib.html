@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from srv-s-grap-enligne.onrender.com/rib.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Nov 2024 20:30:11 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="cdn.lordicon.com/lordicon.js"></script>
+  <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="kit.fontawesome.com/618007f65e.js" crossorigin="anonymous"></script>
+  <script src="assets/js/session.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/menu_bar.css" />
+  <link rel="stylesheet" href="assets/css/rib.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Mon RIB</title>
+</head>
+
+<body>
+  <script src="header.js"></script>
+  <div class="welcome">
+    <h4>Relevé d'identité bancaire</h4>
+  </div>
+  <div class="logout">
+    <i class="fas fa-power-off" style="font-size: 20px; color: red"></i><a href="javascript:logout()">Déconnexion</a>
+  </div>
+
+
+
+  <div class="container back_white mb-1">
+    <div class="rib_title">
+      <h3>RIB - Identifiant national de compte</h3>
+    </div>
+  </div>
+
+
+  <div class="container back_white mb-3">
+    <div class="rib_part mb-2">
+      <p class="rib_label">Etablissement</p>
+      <p>20041</p>
+    </div>
+    <div class="rib_part mb-2">
+      <p class="rib_label">GUICHET</p>
+      <p>01004</p>
+    </div>
+    <div class="rib_part mb-2">
+      <p class="rib_label">N° DE COMPTE</p>
+      <p> 0000066341B </p>
+    </div>
+    <div class="rib_part mb-2">
+      <p class="rib_label">Clé RIB</p>
+      <p>20</p>
+    </div>
+    <div class="rib_part mb-2">
+      <p class="rib_label">Domiciliation</p>
+      <p>SOCIÉTÉ GÉNÉRALE </p>
+    </div>
+  </div>
+
+  <div class="container back_white mb-1">
+    <div class="rib_title">
+      <h3>RIB - Identifiant international de compte</h3>
+    </div>
+  </div>
+
+  <div class="container back_white mb-3">
+    <div class="rib_part mb-2">
+      <p class="rib_label">IBAN</p>
+      <p> MA76 3000 2080 2600 0006 6341 B20 </p>
+    </div>
+    <div class="rib_part mb-2">
+      <p class="rib_label">BIC</p>
+      <p>PSSTFRPPDIJ</p>
+    </div>
+  </div>
+
+
+  <div class="title">
+    <h2>Votre gestionnaire</h2>
+  </div>
+  <script src="footer.js"></script>
+
+  <div class="navigation_bar">
+    <div class="navigation">
+      <ul>
+        <li class="list">
+          <a href="solde.html">
+            <span class="icon">
+              <i class="fas fa-money-bill"></i>
+            </span>
+            <span class="text">Solde</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="historique.html">
+            <span class="icon">
+              <i class="far fa-clock"></i>
+            </span>
+            <span class="text">Historique</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="virement.html">
+            <span class="icon">
+              <i class="fas fa-sort-amount-up-alt"></i>
+            </span>
+            <span class="text">Virement</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="cartes.html">
+            <span class="icon">
+              <i class="fas fa-credit-card"></i>
+            </span>
+            <span class="text">Cartes</span>
+          </a>
+        </li>
+        <li class="list active">
+          <a href="rib.html">
+            <span class="icon">
+              <i class="fas fa-file"></i>
+            </span>
+            <span class="text">Rib</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const list = document.querySelectorAll(".list");
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activeLink));
+  </script>
+
+  <script type="module" src="unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<!-- Mirrored from srv-s-grap-enligne.onrender.com/rib.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Nov 2024 20:30:11 GMT -->
+
+</html>
