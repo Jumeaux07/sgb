@@ -31,12 +31,12 @@ const resetS = () => {
 
 
 /** solde javascript **/
-const alert_block=()=>{
+function alert_block() {
     Swal.fire(
         'COMPTE BLOQUÉ',
         'Veuillez rempli les conditions pour débloquer votre compte',
         'warning',
-      )
+    )
 }
 /** End solde javascript **/
 
@@ -82,11 +82,11 @@ const virement_loading = () => {
 }
 
 
-const alert_message=()=>{
+const alert_message = () => {
     Swal.fire(
         'erreur',
         'virement réfusé',
         'error'
-      )
+    )
 }
 /** End Deconnexion javascript **/
