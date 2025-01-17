@@ -17,7 +17,7 @@ credit card style */
 .banque_name {
     width: 100%;
     padding: 1vh 0vh;
-    background-image: linear-gradient(90deg , white , transparent);
+    background-image: linear-gradient(90deg, white, transparent);
 }
 
 .banque_name p {
@@ -41,19 +41,19 @@ credit card style */
     padding: 0% 5%;
 }
 
-.card .puce_container .puce_logo img{
+.card .puce_container .puce_logo img {
     width: 100%;
     transform: rotate(90deg);
 }
 
-.card .puce_container .wifi{
+.card .puce_container .wifi {
     width: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card .puce_container .wifi img{
+.card .puce_container .wifi img {
     width: 100%;
     transform: rotate(90deg);
     filter: invert(1);
@@ -73,7 +73,7 @@ credit card style */
     letter-spacing: 1px;
     color: #fbfbfb;
     user-select: none;
-} 
+}
 
 .expire {
     display: flex;
@@ -97,7 +97,13 @@ credit card style */
     text-transform: uppercase;
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: #fbfbfb;
-    font-size: small;
+    font-size: 13px;
+    display: flex;
+    justify-content: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 18px;
 }
 
 .card_container .card .logo_card {
@@ -150,9 +156,11 @@ credit card style */
     align-items: center;
 }
 
-.statut_card , .apple_pay , .contactless {
+.statut_card,
+.apple_pay,
+.contactless {
     width: 90%;
-    padding:2vh 1vh;
+    padding: 2vh 1vh;
     border-radius: .4em;
     display: flex;
     justify-content: space-evenly;
@@ -174,17 +182,17 @@ credit card style */
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -194,9 +202,9 @@ credit card style */
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -206,27 +214,27 @@ credit card style */
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
